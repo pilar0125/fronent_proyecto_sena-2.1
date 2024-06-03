@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" contect="width=device-width, inital-scale=1.0">
+    <!--<tile> Productos </tile> ,// Este espacio lo dejaremos para revisar si se puede a;adir el logo-->
+    <link rel="shortcut icon" href="Img/login.jpg" type="image/x-icon" > <!--este es el codigo para icono-->
+    <link rel="stylesheet" href="CSS/productos.css"> <!--link para ir a css-->
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"> Home </a>
+            <a href="register.html"> Iniciar Sesión </a>
+            <a href="register.html"> Registrarse </a>
+            <a href="productos.html"> Productos </a>    
+            <div class="submenu">
+                <a href="#"><img src="Img/icons8-carrito-de-compras-24.png" id="img-carrito" alt="carrito"></a>
+                <div id="carrito">
+                    <table id="lista-carrito" class="u-full-width">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                </div>
+            </div>
+        </nav>
+        <section class="textos-header">
+            <h1> Los mejores Productos </h1>
+            <h2> Productos al mejor precio </h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.00,49.85 C150.00,149.60 348.41,-61.51 500.00,49.85 L500.00,149.60 L-0.00,149.60 Z" style="stroke: none; fill: rgb(237, 238, 237);"></path></svg></div>
+    </header>
+
+    <main class="products container" id="lista-1">
+        <h2>Productos Destacados</h2>
+
+        <div class="product-content">
+
+            <div class="product">
+                <img src="IMG/f1.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Huevos Criollos</h3>
+                    <p class="precio">12.000</p>
+                    <a href="#"class="agregar-carrito btn-2"data-id="1">Agregar</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="IMG/f2.jpg" alt="">
+                <div class="product-txt">
+                    <h3>Pollo Criollo</h3>
+                    <p class="precio">14.000</p>
+                    <a href="#"class="agregar-carrito btn-2"data-id="2">Agregar</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="IMG/f3.jpg" alt="">
+                <div class="product-txt">
+                    <h3>Leche de Cabra</h3>
+                    <p class="precio">10.000</p>
+                    <a href="#"class="agregar-carrito btn-2"data-id="3">Agregar</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="IMG/f4.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Pescado</h3>
+                    <p class="precio">5.000</p>
+                    <a href="#"class="agregar-carrito btn-2"data-id="4">Agregar</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="IMG/f5.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Limon mandarino</h3>
+                    <p class="precio">2.000</p>
+                    <a href="#"class="agregar-carrito btn-2"data-id="5">Agregar</a>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <section class="contact container"> 
+        <form>
+            <input type="email" placeholder="Correo">
+            <input type="submit" class="btn-3">            
+        </form>
+
+    </section>
+    <footer>
+        <div class="contenedor-flooter">
+            <div class="contenet-foo">
+                <h4>Phone</h4>
+                <p>2393673639</p>
+            </div>
+            <div class="contenet-foo">
+                <h4>Email</h4>
+                <p>mariafernandaortizcanon@gmail.Com</p>
+            </div>
+            <div class="contenet-foo">
+                <h4>ubicacion</h4>
+                <p>Municipio de Salazar</p>
+            </div>
+        </div>
+
+    </footer>
+
+<script src="carrito.js"></script>
+
+</body>
+</html>
+

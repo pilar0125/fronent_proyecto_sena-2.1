@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="shortcut icon" href="Img/login.jpg" type="image/x-icon" > <!--este es el codigo para icono-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+         />
+    <link rel="stylesheet" href="CSS/info_p.css"> <!--link para ir a css-->
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"> Home </a>
+            <a href="register.html"> Iniciar Sesión </a>
+            <a href="register.html"> Registrarse </a>
+            <a href="productos.html"> Productos </a>    
+            <div class="submenu">
+                <a href="#"><img src="Img/icons8-carrito-de-compras-24.png" id="img-carrito" alt="carrito"></a>
+                <div id="carrito">
+                    <table id="lista-carrito" class="u-full-width">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="Img/ilustracion1.1 (2).jpg" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>$12.000</span>
+                        <h3>Huevos Criollos</h3>
+                        <p>Provenientes de gallinas criadas en entornos naturales, nuestros huevos ofrecen 
+                            una experiencia gastrónomica única. Con cáscara robusta y yemas de color vibrante, 
+                            cada huevo criollo es un testimonio de calidad y tradición.
+                    </div>
+                    <div class="product-img">
+                        <img src="Img/f1.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="Img/ilustracion1.1 (2).jpg" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>$14.000</span>
+                        <h3>Pollos criollos</h3>
+                        <p>Explora la autenticidad de nuestra carne de pollo criollo. Criados en entornos naturales,
+                            nuestros pollos ofrecen un sabor único y una calidad exepcional. 
+                            Descrubre la diferencia en cada bocado. 
+                        </p>
+                    </div>
+                    <div class="product-img">
+                        <img src="Img/f2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="Img/ilustracion1.1 (2).jpg" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>$10.000</span>
+                        <h3>Leche de cabra</h3>
+                        <p> Sumergete en la pureza de nuestra leche de cabra. Producida en entornos naturales, nuestra leche ofrece un sabor rico y
+                            nutritivo. 
+                        </p>
+                    </div>
+                    <div class="product-img">
+                        <img src="Img/f3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="Img/ilustracion1.1 (2).jpg" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>$5.000</span>
+                        <h3>Pescado</h3>
+                        <p>Explora la frescura del mar en cada plato con nuestro pescado. 
+                            Capturado de manera sostenible y preparado con cuidado, nuestro pescado 
+                            ofrece un sabor delicioso y nutritivo para disfrutar. 
+                        </p>
+                    </div>
+                    <div class="product-img">
+                        <img src="Img/f4.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="Img/ilustracion1.1 (2).jpg" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>$2.000</span>
+                        <h3>Limon mandarino</h3>
+                        <p>Experimenta la explosión de sabor cítrico con nuestro limón mandarino. 
+                            Cultivado con esmero y cariño, nuestro limón ofrece un toque refrescante 
+                            y aromático para tus platos y bebidas favoritas. 
+                        </p>
+                    </div>
+                    <div class="product-img">
+                        <img src="Img/f5.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <div class="contenedor-flooter">
+            <div class="contenet-foo">
+                <h4>Phone</h4>
+                <p>2393673639</p>
+            </div>
+            <div class="contenet-foo">
+                <h4>Email</h4>
+                <p>mariafernandaortizcanon@gmail.Com</p>
+            </div>
+            <div class="contenet-foo">
+                <h4>ubicacion</h4>
+                <p>Municipio de Salazar</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+       var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    loop: true,
+    coverflowEffect: {
+        depth: 500,
+        modifier: 1, // Corregido: modifier en lugar de modifer
+        slideShadows: true, // Corregido: slideShadows en lugar de slidesShadows
+        rotate: 0,
+        stretch: 0
+    }
+})
+    </script>
+  <script src="carrito.js"></script>
+</body>

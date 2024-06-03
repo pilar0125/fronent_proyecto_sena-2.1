@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'open sans';
+}
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.titulo{
+    color: rgb(42, 2, 2);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+/* header */
+header{
+    width: 1005;
+    height: 600px;
+    background: #3CA55C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #B5AC49, #3CA55C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b5ac497d, #3ca55c6d), url(../IMG/imagen-portada.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 50px 0 0;
+}
+nav > a {
+    color: azure;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+nav > a:hover {
+    text-decoration: underline;
+}
+
+.submenu {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    background-color: #f0edf376;
+    padding: 20px;
+    min-width: 400px;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    color: #FFFFFF;
+}
+
+.borrar {
+    background-color: #8dc84b;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: #FFFFFF;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.textos-header h1{
+    font-size: 50px;
+    color: #fff;
+}
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.products { 
+    padding: 0 0 100px 0;
+    text-align: center;
+
+}
+
+.product h2 {
+    font-size: 40px;
+    color: #181713;
+    text-transform: capitalize;
+    margin-bottom: 55px;
+}
+/* no se esta acomudando en columnas de 4 solo de una, revisar */
+.product-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.product {
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    padding: 35px;
+}
+
+.product img{
+    width: 150px;
+    height: 130px;
+    margin-bottom: 10px;
+}
+
+.product h3{
+    color: #8DC84B;
+}
+
+.product p{
+    font-size: 15px;
+    margin: 0;
+    color: #181713;
+    font-weight: 600;
+}
+
+.btn-2{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 7px 25px;
+    border-radius: 5px;
+    color: #FFFF;
+    background-color: #8DC84B;
+}
+
+.contact {
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form { 
+    display: flex;
+
+}
+
+input{ 
+    padding: 17px 35px;
+    border-radius: 25px;
+    border: 1px solid #8DC84B;
+    outline: none;
+}
+
+.btn-3 {
+    margin-left: 10px;
+    color: #FFFFFF;
+    background-color: #8DC84B;
+}
+
+.footer{
+    padding: 50px 0;
+    background-color: #8DC84B;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3{
+    color: #FFFFFF;
+    font-size: 17px;
+    margin-bottom: 10px
+}
+
+.link a{
+    color: #F3F3F3;
+    font-size:15px;
+    margin-bottom: 10px;
+}
+
+.link a:hover {
+    color: #FFFFFF;
+}
+
+
+
+footer{
+    background: #ac9d9d;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+.contenedor-flooter{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ac9d9d;
+}
+
+.contenet-foo h4{
+    color: #101010;
+    border-bottom: 3px solid #010101;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.contenet-foo p{
+    color: #fff;
+}
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #1a1b1b;
+}
+
+
+@media (max-witdth: 991px){
+
+    .menu{
+        padding: 30px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .products{
+        padding: 30px;
+    }
+
+    .product-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer{
+        padding: 30px;
+    }
+
+    .footer-contect{
+        flex-direction: colunm;
+        text-align: center;
+    }
+    
+ 
+}
